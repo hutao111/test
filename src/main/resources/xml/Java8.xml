@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="test.a.mapper.Java8mapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="test.a.entity.Java8">
+        <result column="java8_date" property="java8Date" />
+        <result column="java8_time" property="java8Time" />
+        <result column="java8_date_time" property="java8DateTime" />
+        <result column="id" property="id" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        java8_date AS java8Date, java8_time AS java8Time, java8_date_time AS java8DateTime, id AS id
+    </sql>
+
+</mapper>
